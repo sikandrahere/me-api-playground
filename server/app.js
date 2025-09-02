@@ -7,7 +7,11 @@ import profileRoutes from './src/routes/profile.routes.js';
 const app = express();
 // middlewares
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin: ['http://localhost:5173', 'https://me-api-playground-nine.vercel.app/'],
+    }
+));
 
 // routes
 app.use('/', profileRoutes);
