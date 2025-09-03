@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors(
     {
-        origin: ['http://localhost:5173', 'https://me-api-playground-nine.vercel.app/'],
+        origin: ['http://localhost:5173', 'https://me-api-playground-nine.vercel.app'],
     }
 ));
 
